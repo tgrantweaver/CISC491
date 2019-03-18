@@ -13,6 +13,7 @@
     <script src='js/lib/moment.min.js'></script>
     <script src='js/fullcalendar.js'></script>
     <script type='text/javascript' src='js/lib/gcal.js'></script>
+    <script type='text/javascript' src='initial.js'></script>
 
     
     <script>
@@ -27,6 +28,16 @@
 
       });
     </script>
+    <script>
+      $('#calendar').fullCalendar({
+        dayClick: function(date, jsEvent, view) {
+          $(this).css('background-color', 'red');
+        }
+      })
+    </script>
+    
+    <script src='myCalendar.js'></script>
+    
    </head>
   <body>
   <div id="calendar"></div>
